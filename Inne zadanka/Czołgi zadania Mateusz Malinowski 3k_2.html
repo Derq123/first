@@ -2,34 +2,36 @@
     <head>
 <title>Mateusz Malinowski Tanki 3k_2</title>
 <script type="text/javascript">
-function czołg(kraj,dataPrototypu,model,)
+function czolg(kraj,dataPrototypu,model,zasieg,typ,pancerz,masa,moc)
 {
     this.kraj=kraj;
     this.dataPrototypu=dataPrototypu;
     this.model=model;
-
+    this.zasieg=zasieg;
+    this.typ=typ;
+    this.pancerz=pancerz;
+    this.masa=masa;
+    this.moc=moc;
 }
 
 
-czołg1=new czołg("Ameryka","1980","M1 Abrams");
-czołg2=new czołg("ZSRR","1967","T-80")
-czołg3=new czołg("Niemcy","1973","Leopard II")
-czołg4=new czołg("Japonia","1931","Sōkō-sagyōki")
-czołg5=new czołg("Polska","1930","TK-3")
+czolg1=new czolg("Ameryka","1980","M1 Abrams","498km","podstawowy","warstwowy","54 500kg","1103kW");
+czolg2=new czolg("ZSRR","1967","T-80","335km","podstawowy","500mm","42 200kg","1000kW")
+czolg3=new czolg("Niemcy","1973","Leopard II","550km","podstawowy","280mm","55 150kg","1500kW")
+czolg4=new czolg("Japonia","1931","Sōkō-sagyōki","200km","techniczny","6mm","13 000kg","Mitsubishi I6")
+czolg5=new czolg("Polska","1930","TK-3","200km","tankietka","3-8mm","2 430kg","40kM")
 
-document.write("kraj: "+czołg1.kraj+" data Prototypu : "+czołg1.dataPrototypu+" model: "+czołg1.model+" <br>" ); 
-document.write("kraj: "+czołg2.kraj+" data Prototypu : "+czołg2.dataPrototypu+" model: "+czołg2.model+"<br>");
-document.write("kraj: "+czołg3.kraj+" data Prototypu : "+czołg3.dataPrototypu+" model: "+czołg3.model+" <br>");
-document.write("kraj: "+czołg4.kraj+" data Prototypu : "+czołg4.dataPrototypu+" model: "+czołg4.model+" <br>");
-document.write("kraj: "+czołg5.kraj+" data Prototypu : "+czołg5.dataPrototypu+" model: "+czołg5.model+" <br>");
-
+document.write("kraj: "+czolg1.kraj+" data Prototypu : "+czolg1.dataPrototypu+" model : "+czolg1.model+" zasieg : "+czolg1.zasieg+" typ : "+czolg1.typ+" pancerz : "+czolg1.pancerz+" masa : "+czolg1.masa+" moc : "+czolg1.moc+"<br>");
+document.write("kraj: "+czolg2.kraj+" data Prototypu : "+czolg2.dataPrototypu+" model : "+czolg2.model+" zasieg : "+czolg2.zasieg+" typ : "+czolg2.typ+" pancerz : "+czolg2.pancerz+" masa : "+czolg2.masa+" moc : "+czolg2.moc+"<br>");
+document.write("kraj: "+czolg3.kraj+" data Prototypu : "+czolg3.dataPrototypu+" model : "+czolg3.model+" zasieg : "+czolg3.zasieg+" typ : "+czolg3.typ+" pancerz : "+czolg3.pancerz+" masa : "+czolg3.masa+" moc : "+czolg3.moc+"<br>");
+document.write("kraj: "+czolg4.kraj+" data Prototypu : "+czolg4.dataPrototypu+" model : "+czolg4.model+" zasieg : "+czolg4.zasieg+" typ : "+czolg4.typ+" pancerz : "+czolg4.pancerz+" masa : "+czolg4.masa+" moc : "+czolg4.moc+"<br>");
+document.write("kraj: "+czolg5.kraj+" data Prototypu : "+czolg5.dataPrototypu+" model : "+czolg5.model+" zasieg : "+czolg5.zasieg+" typ : "+czolg5.typ+" pancerz : "+czolg5.pancerz+" masa : "+czolg5.masa+" moc : "+czolg5.moc+"<br>");
 
 
 
 </script>
     </head>
     <body>
-
 
     </body>
 </html>
