@@ -1,0 +1,24 @@
+<html>
+<body>
+<div style="font-family:  'Times New Roman', Times, serif; color: rgb(194, 26, 236);">
+ <script language="JavaScript">
+var No_mal=prompt("No=");
+No_mal=parseFloat(No_mal);
+var t_mal=prompt("t=");
+t_mal=parseFloat(t_mal);
+var T12_mal=prompt("T1/2=");
+T12_mal=parseFloat(T12_mal);
+var lmbd_mal=Math.log(2)/T12_mal;
+lmbd_mal=parseFloat(lmbd_mal);
+var N_mal=No_mal*Math.exp(-lmbd_mal*t_mal) 
+N_mal=parseFloat(N_mal);
+
+document.write("No="+No_mal+" sztuk"+"<br>");
+document.write("t="+t_mal+" lat"+"<br>");
+document.write("T1/2= "+T12_mal+" lat"+"<br>");
+document.write("Lambda="+lmbd_mal.toFixed(7)+" 1/rok"+"<br>");
+document.write("N="+N_mal.toFixed(7)+" sztuk"+"<br>");
+ </script>
+</div>
+</body>
+</html>
